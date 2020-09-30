@@ -20,8 +20,8 @@ Acces denied
 
 import time
 
-username = str(input("Enter your username: "))
-password = str(input("Enter your password: "))
+username = str(input("Enter your username: ")).strip()
+password = str(input("Enter your password: ")).strip()
 real_username = str("admin")
 real_password = str("12345")
 count = 0
@@ -31,8 +31,8 @@ while username != real_username and password != real_password:
     count = count + 1
     if count > 2:
         break
-    username = str(input("Enter your username: "))
-    password = str(input("Enter your password: "))
+    username = str(input("Enter your username: ")).strip()
+    password = str(input("Enter your password: ")).strip()
 
 if username == real_username and password == real_password:
     print("Acess granted")
