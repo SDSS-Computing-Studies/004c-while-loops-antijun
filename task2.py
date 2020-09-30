@@ -29,4 +29,4 @@ while username != real_username and password != real_password:
     password = (input("Enter your password: ")).strip()
 
 if username == real_username and password == real_password:
-    print("Acess granted")
+    print("Access granted")
