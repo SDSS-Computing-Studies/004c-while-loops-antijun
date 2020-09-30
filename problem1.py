@@ -26,7 +26,7 @@ real_username = str("admin")
 real_password = str("12345")
 count = 0
 
-while username != real_username and password != real_password:
+while username != real_username or password != real_password:
     print("Access denied")
     count = count + 1
     if count > 2:
