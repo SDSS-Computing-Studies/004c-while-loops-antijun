@@ -1,4 +1,4 @@
-##### Problem 1
+# Problem 1
 """
 Have the user enter a username and password.
 Repeat this until both the username and password match the 
@@ -17,3 +17,22 @@ outputs:
 Access granted
 Acces denied
 """
+
+import time
+
+username = str(input("Enter your username: "))
+password = str(input("Enter your password: "))
+real_username = str("admin")
+real_password = str("12345")
+count = 0
+
+while username != real_username and password != real_password:
+    print("Access denied")
+    count = count + 1
+    if count > 2:
+        break
+    username = str(input("Enter your username: "))
+    password = str(input("Enter your password: "))
+
+if username == real_username and password == real_password:
+    print("Acess granted")
