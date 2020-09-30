@@ -22,4 +22,4 @@ while a < 100:
     a = b + c
     c = b
     b = a
-    print(a)
+    print(a, end=" ")
